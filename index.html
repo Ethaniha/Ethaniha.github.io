@@ -16,7 +16,16 @@
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker preset="custom" type='pattern' url="Markers/pattern-Architect.patt">
+        <!-- <a-marker type='barcode' value="7">
+            <a-box position='1.5 1 0' material='opacity: 0.5; side: double;color:red;'>
+                <a-text value="Red Pill" position='0 1 0' align='center' color='red'></a-text>
+            </a-box>
+            <a-box position='-1.5 1 0' material='opacity: 0.5; side: double;color:blue;'>
+                <a-text value="Blue Pill" position='0 1 0' align='center' color='blue'></a-text>
+            </a-box>
+        </a-marker> -->
+
+        <a-marker type='pattern' url="Markers/pattern-Arch.patt">
             <a-box position='1.5 1 0' material='opacity: 0.5; side: double;color:red;'>
                 <a-text value="Red Pill" position='0 1 0' align='center' color='red'></a-text>
             </a-box>
@@ -25,10 +34,10 @@
             </a-box>
         </a-marker>
 
-        <a-marker id="animated-marker" type='barcode' value='6'>
+        <!-- <a-marker id="animated-marker" type='barcode' value='6'>
             <a-entity animation-mixer gltf-model="#animated-asset" scale="1 1 1">
             </a-entity>
-        </a-marker>
+        </a-marker> -->
 
         <a-entity camera></a-entity>
     </a-scene>
