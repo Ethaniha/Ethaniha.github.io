@@ -13,13 +13,7 @@
     <a-scene embedded vr-mode-ui="enabled: false"
         arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
-        <a-assets>
-            <a-asset-item id="animated-asset"
-                src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf">
-            </a-asset-item>
-        </a-assets>
 
-        <!-- <a-marker preset='custom' type='pattern' url='/assets/markers/Diss-Marker.patt'> -->
         <a-marker type='barcode' value='7'>
             <a-box id="box1" position='1.5 1 0' material='opacity: 0.5; side: double;color:red;'>
                 <a-text value="Red Pill" position='0 1 0' align='center' color='red'></a-text>
@@ -31,23 +25,6 @@
 
         <a-entity camera></a-entity>
     </a-scene>
-    <!-- <script>
-        var box1Var = document.querySelector('#box1');
-        var box2Var = document.querySelector('#box2');
-
-        function getRandomColor() {
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        box1Var.addEventListener("mouseenter", function () {
-            box1Var.setAttribute("color", { getRandomColor() })
-        });
-    </script> -->
 
 </body>
 
