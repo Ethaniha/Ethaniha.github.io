@@ -11,14 +11,14 @@
 <body style='margin : 0px; overflow: hidden;'>
     <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
     <a-scene embedded vr-mode-ui="enabled: false"
-        arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+        arjs="sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
 
         <a-marker type='barcode' value='7'>
-            <a-box id="box1" position='1.5 1 0' material='opacity: 0.5; side: double;color:red;'>
+            <a-box position='1.5 1 0' material='opacity: 0.5; side: double;color:red;'>
                 <a-text value="Red Pill" position='0 1 0' align='center' color='red'></a-text>
             </a-box>
-            <a-box id="box2" position='-1.5 1 0' material='opacity: 0.5; side: double;color:blue;'>
+            <a-box position='-1.5 1 0' material='opacity: 0.5; side: double;color:blue;'>
                 <a-text value="Blue Pill" position='0 1 0' align='center' color='blue'></a-text>
             </a-box>
         </a-marker>
