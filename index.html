@@ -23,8 +23,7 @@
             <a-asset-item id="model" src="assets/models/scene.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker markerhandler emitevents="true" cursor="rayOrigin: mouse" id="barcode-marker" type='barcode'
-            value='7'>
+        <a-marker markerhandler emitevents="true" id="barcode-marker" type='barcode' value='7'>
             <a-entity gltf-model="#model" position="-1.75 0.5 -0.75" scale="0.18 0.18 0.18" rotation="0 90 0">
             </a-entity>
             <a-image src="#image-face" position="3 0.25 0" rotation="270 0 0" height='3' width='3'>
@@ -38,7 +37,10 @@
 
         </a-marker>
 
-        <a-entity camera></a-entity>
+        <a-entity camera>
+            <a-entity cursor="rayOrigin: mouse" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                material="color: black; shader: flat">
+            </a-entity>
     </a-scene>
 
 </body>
