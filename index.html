@@ -16,17 +16,22 @@
         <a-assets>
             <img id="image-face" src="assets/images/Felippo.png">
             <img id="image-map" src="assets/images/MapCard.png">
+            <img id="icon-linkedin" src="assets/icons/social-linkedin-circle-512.png">
             <a-asset-item id="model" src="assets/models/scene.gltf"></a-asset-item>
         </a-assets>
 
         <a-marker type='barcode' value='7'>
             <a-entity gltf-model="#model" position="-1.75 0.5 -0.75" scale="0.18 0.18 0.18" rotation="0 90 0">
             </a-entity>
-            <a-image src="#image-face" position="3 0.25 -0.75" rotation="270 0 0" height='3' width='3'>
-                <a-text value="Filippo\nPerinini" scale="4 4 1" position="1.75 0.5 0"></a-text>
+            <a-image src="#image-face" position="3 0.25 0" rotation="270 0 0" height='3' width='3'>
+                <a-text value="Filippo\nPerini" scale="4 4 1" position="1.75 0.5 0"></a-text>
                 <a-text value="Head of Design" scale="2 2 1" position="1.75 -0.75 0"></a-text>
             </a-image>
             <a-image src="#image-map" position="-1.75 0 3.75" rotation="270 0 0" height="3.906" width="6.03"></a-image>
+            <a-entity position="3 -3 0" rotation="270 0 0" height='3' width='3'>
+                <a-image src="#icon-linkedin"
+                    onclick="location.href = 'https://www.linkedin.com/in/filippo-perini-525553aa/'"></a-image>
+            </a-entity>
 
         </a-marker>
 
